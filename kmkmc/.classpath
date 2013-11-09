@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="pkg/jsr-113-0.5/org.jvoicexml.jsapi2.jar"/>
+	<classpathentry kind="lib" path="pkg/jsr-113-0.5/org.jvoicexml.jsapi2.mac.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="kmkmc/pkg/jsr-113-0.5"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="pkg/jsr-113-0.5/org.jvoicexml.jsapi2.freetts.jar"/>
+	<classpathentry kind="lib" path="pkg/jsr-113-0.5/org.jvoicexml.jsapi2.sapi.jar"/>
+	<classpathentry kind="lib" path="pkg/jsr-113-0.5/org.jvoicexml.jsapi2.sphinx4.jar"/>
+	<classpathentry kind="lib" path="pkg/freetts-1.2/lib/cmu_time_awb.jar"/>
+	<classpathentry kind="lib" path="pkg/freetts-1.2/lib/cmu_us_kal.jar"/>
+	<classpathentry kind="lib" path="pkg/freetts-1.2/lib/cmudict04.jar"/>
+	<classpathentry kind="lib" path="pkg/freetts-1.2/lib/cmulex.jar"/>
+	<classpathentry kind="lib" path="pkg/freetts-1.2/lib/cmutimelex.jar"/>
+	<classpathentry kind="lib" path="pkg/freetts-1.2/lib/en_us.jar"/>
+	<classpathentry kind="lib" path="pkg/freetts-1.2/lib/freetts-jsapi10.jar"/>
+	<classpathentry kind="lib" path="pkg/freetts-1.2/lib/freetts.jar"/>
+	<classpathentry kind="lib" path="pkg/freetts-1.2/lib/mbrola.jar"/>
+	<classpathentry kind="lib" path="pkg/freetts-1.2/lib/jsapi.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
