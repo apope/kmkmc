@@ -1,3 +1,5 @@
+// Copyright (c) 2013 Art Pope. All rights reserved.
+
 package org.kmkmc;
 
 import javax.script.ScriptEngine;
@@ -14,14 +16,25 @@ public class AudioSystem {
   
   private ScriptEngine scriptEngine = new ScriptEngineManager().getEngineByName("AppleScript");
 
+  /** 
+   * Starts playback of a specified playlist.
+   *  
+   * @param playlist the name of the playlist
+   */
+  public void play(String playlist) {
+    command("play playlist \"" + playlist + "\"");
+  }
+  
+  /** Resumes playback of the current playlist. */
   public void play() {
     command("play");
   }
   
+  /** Pauses playback. */
   public void pause() {
     command("pause");
   }
-  
+
   private void command(String verb) {
     try {
       scriptEngine.eval("tell application \"iTunes\" to " + verb);
@@ -31,6 +44,7 @@ public class AudioSystem {
     }
   }
 
+  /** Unit test. */
   public static void main(String[] args) throws Exception {
     AudioSystem audio = new AudioSystem();
     audio.play();
